@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fa" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RDash AngularJS</title>
+    <!-- STYLES -->
+    <!-- build:css lib/css/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="components/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.min.css">
+    <link rel="stylesheet" type="text/css" href="css/rtl.css">
+    <!-- endbuild -->
+</head>
+<body ng-controller="MainController">
+<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar">
+            <li class="sidebar-main">
+                <a ng-click="toggleSidebar()">
+                    Dashboard
+                    <span class="menu-icon glyphicon glyphicon-transfer"></span>
+                </a>
+            </li>
+            <!--<li class="sidebar-title"><span>NAVIGATION</span></li>-->
+            <li class="sidebar-list">
+                <a href="#!/">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a href="#!/tables">Tables
+                    <span class="menu-icon fa fa-table"></span>
+                </a>
+            </li>
+            <li class="sidebar-list">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Elements
+                    <i class="fa fa-angle-down"></i>
+                    <span class="menu-icon fa fa-gift fa-lg"></span>
+                </a>
+                <ul class="sidebar dropdown-menu forAnimate" role="menu">
+                    <li class="sidebar-list"><a href="">Crear</a></li>
+                    <li><a href="#">Modificar</a></li>
+                    <li><a href="#">Reportar</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Informes</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--<div class="sidebar-footer">
+            <div class="col-xs-4">
+                <a href="https://github.com/rdash/rdash-angular" target="_blank">
+                    Github
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://github.com/rdash/rdash-angular/blob/master/README.md" target="_blank">
+                    About
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    Support
+                </a>
+            </div>
+        </div>-->
+    </div>
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+        <div class="page-content">
+
+            <!-- Header Bar -->
+            <div class="row header">
+                <div class="col-xs-12">
+                    <div class="user pull-left">
+                        <div class="item dropdown" uib-dropdown>
+                            <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                                <i class="fa fa-bell-o"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li class="dropdown-header">
+                                    Notifications
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">Server Down!</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown" uib-dropdown>
+                            <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                                <img src="img/avatar.jpg">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li class="dropdown-header">
+                                    Joe Bloggs
+                                </li>
+                                <li class="divider"></li>
+                                <li class="link">
+                                    <a href="#">
+                                        Profile
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="#">
+                                        Menu Item
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="#">
+                                        Menu Item
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="link">
+                                    <a href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <div class="page">
+                            Dashboard
+                        </div>
+                        <div class="breadcrumb-links">
+                            Home / Dashboard
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Bar -->
+
+            <!-- Main Content -->
+            <div ui-view></div>
+
+        </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+</div>
+
+<!-- SCRIPTS -->
+<!-- build:js lib/js/main.min.js -->
+<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="components/angular/angular.min.js"></script>
+<script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
+<script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!-- endbuild -->
+<!-- Custom Scripts -->
+<script type="text/javascript" src="js/dashboard.min.js"></script>
+</body>
+</html>

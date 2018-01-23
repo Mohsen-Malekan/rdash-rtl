@@ -1,0 +1,117 @@
+#page-wrapper {
+    padding-right: 70px;
+    padding-left: inherit;
+}
+
+#page-wrapper.open #sidebar-wrapper {
+    right: 150px !important;
+}
+
+#sidebar-wrapper {
+    margin-right: -150px !important;
+    right: -30px;
+}
+
+.row.header > div:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.sidebar .sidebar-main .menu-icon {
+    float: left;
+    padding-left: 29px;
+}
+
+ul.sidebar .sidebar-list .menu-icon {
+    float: left;
+    padding-left: 29px;
+    padding-right: inherit;
+}
+
+ul.sidebar .sidebar-list a.dropdown-toggle .menu-icon,
+ul.sidebar .sidebar-list a.dropdown-toggle:hover .menu-icon {
+    text-indent: 23px;
+}
+
+/*ul.sidebar .sidebar-list .menu-icon {
+    float: right;
+    padding-left: 0;
+    padding-right: inherit;
+    width: 30px;
+}*/
+
+ul.sidebar li a {
+    float: right;
+}
+
+ul.sidebar .sidebar-list a:hover,
+ul.sidebar .sidebar-list a.active {
+    border-right: 3px solid #e99d1a;
+    border-left: none;
+    background: #2d3e63;
+    color: #fff;
+}
+
+#page-wrapper ul.sidebar .sidebar-list a i {
+    margin-right: -15px;
+}
+
+div#sidebar-wrapper ul.sidebar li.sidebar-list.open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div#sidebar-wrapper ul.sidebar li.sidebar-list.open .dropdown-menu li a {
+    /*padding-right: 45px;*/
+    line-height: 25px;
+}
+
+ul.sidebar.dropdown-menu li.sidebar-list {
+    height: 30px;
+}
+
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a:hover span,
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a.active span {
+    border-right: 3px solid #e99d1a;
+    border-left: none;
+    background: #2d3e63;
+    color: #fff;
+}
+
+.widget .widget-icon {
+    margin-left: 15px;
+    margin-right: inherit;
+}
+
+.row.header .user > .item ul.dropdown-menu:before {
+    left: 23px;
+    right: auto;
+}
+
+.row.header .user > .item ul.dropdown-menu:after {
+    left: 24px;
+    right: auto;
+}
+
+.row.header .user > .item ul.dropdown-menu li.link {
+    text-align: right;
+}
+
+@media only screen and (min-width: 561px) {
+    #page-wrapper.open {
+        padding-right: 250px !important;
+        padding-left: initial;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #page-wrapper.open {
+        padding-left: 0;
+    }
+}
